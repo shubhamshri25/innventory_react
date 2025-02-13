@@ -26,7 +26,7 @@ const Cart = ({ items, onRemoveFromCart, onUpdateQuantity }) => {
               />
               <div className="flex-1">
                 <h3 className="font-semibold">{item.name}</h3>
-                <p className="text-gray-600"> $ {item.price} </p>
+                <p className="text-gray-600"> ₹ {item.price} </p>
                 <div className="flex items-center gap-2 mt-2">
                   <select
                     value={item.quantity}
@@ -51,7 +51,7 @@ const Cart = ({ items, onRemoveFromCart, onUpdateQuantity }) => {
               </div>
               <div className="text-right">
                 <p className="font-semibold">
-                  ${(item.price * item.quantity).toFixed(2)}
+                  ₹ {(item.price * item.quantity).toFixed(2)}
                 </p>
               </div>
             </div>
